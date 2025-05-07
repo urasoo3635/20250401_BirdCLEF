@@ -4,7 +4,7 @@
 下記フォルダにある.oggファイル。.oggファイルをまとめるフォルダはクラス名を意味する。<br>
 /home/data/train_audio
 <br>
-"/home/data/train.csv"のfilepathは"/home/data/train_audio"配下のファイルパスをさしている。
+"/home/data/train.csv"のfilenameは"/home/data/train_audio"配下のファイルパスをさしている。
 本実験ではプログラムの正常動作を確認するために"/home/data/train.csv"の上位5000行を学習対象とする。
 
 ### 機能
@@ -14,6 +14,7 @@
 
 #### 1. 音声をメルスペクトログラムに変換する機能
 - ファイル名:audio2mel.ipynb
+- 音声データの正規化:min-max scaling
 - メルスペクトログラムの設定値
     - サンプリング周波数
         - 変数名:SR
